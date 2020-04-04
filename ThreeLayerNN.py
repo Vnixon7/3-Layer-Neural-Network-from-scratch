@@ -8,7 +8,7 @@ def sigmoid(z):
     return 1 / (1 + np.exp(-z))
 
 
-class Neural_Net(object):
+class Neural_Net:
 
     def __init__(self, x, y, label, step_size):
         num = np.random.normal(size=9)
