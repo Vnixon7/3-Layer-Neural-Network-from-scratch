@@ -45,7 +45,7 @@ class Neural_Net:
         self.n2 = sigmoid(self.z2)
         self.output = self.a3 * self.n1 + self.b3 * self.n2
 
-        # maximizing or minimizing to fit proper classification
+        # Optimization: maximizing or minimizing to fit proper classification
 
         self.sign = 1 if self.label == 1 and self.output < 1 else -1 if self.label == -1 and self.output > -1 else 0
 
